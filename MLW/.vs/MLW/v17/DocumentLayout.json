@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\gitignore||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:gitignore||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\playerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\playerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\model\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:model\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\icharacterfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\icharacterfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +54,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerFactory.cs",
+              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\PlayerFactory.cs",
+              "RelativeDocumentMoniker": "Controller\\PlayerFactory.cs",
+              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\PlayerFactory.cs",
+              "RelativeToolTip": "Controller\\PlayerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:12:17.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICharacterFactory.cs",
+              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\ICharacterFactory.cs",
+              "RelativeDocumentMoniker": "Controller\\ICharacterFactory.cs",
+              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\ICharacterFactory.cs",
+              "RelativeToolTip": "Controller\\ICharacterFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:10:37.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Model\\Player.cs",
+              "RelativeDocumentMoniker": "Model\\Player.cs",
+              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Model\\Player.cs",
+              "RelativeToolTip": "Model\\Player.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwC0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T14:04:39.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Model\\Character.cs",
+              "RelativeDocumentMoniker": "Model\\Character.cs",
+              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Model\\Character.cs",
+              "RelativeToolTip": "Model\\Character.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:45:16.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "gitignore",
-              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\gitignore",
-              "RelativeDocumentMoniker": "gitignore",
-              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\gitignore",
-              "RelativeToolTip": "gitignore",
-              "ViewState": "AgIAAOYCAAAAAAAAAAAQwB0DAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-22T13:42:42.016Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T13:51:37.879Z",
               "EditorCaption": ""
             }
           ]

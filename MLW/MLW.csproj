@@ -8,12 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="gitignore" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
+    <Folder Include="View\" />
   </ItemGroup>
 
 </Project>

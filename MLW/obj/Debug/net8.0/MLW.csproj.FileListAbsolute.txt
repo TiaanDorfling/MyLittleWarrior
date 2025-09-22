@@ -1,0 +1,15 @@
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.AssemblyInfoInputs.cache
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.AssemblyInfo.cs
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.csproj.CoreCompileInputs.cache
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.sourcelink.json
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\bin\Debug\net8.0\MLW.exe
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\bin\Debug\net8.0\MLW.deps.json
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\bin\Debug\net8.0\MLW.runtimeconfig.json
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\bin\Debug\net8.0\MLW.dll
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\bin\Debug\net8.0\MLW.pdb
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.dll
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\refint\MLW.dll
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.pdb
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\MLW.genruntimeconfig.cache
+C:\Users\purnj\Desktop\BC\2025\apps\Games\My Little Warrior\MLW\MyLittleWarrior\MLW\obj\Debug\net8.0\ref\MLW.dll

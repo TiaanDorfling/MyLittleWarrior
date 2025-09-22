@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MLW.Model;
+
+public class Equipment
+{
+    public string Type { get; set; }
+    public string Rarity { get; set; }
+    public int Level { get; set; }
+    public int BaseStat {  get; set; }
+
+    public void Upgrade()
+    {
+        Level++;
+        BaseStat += 5;
+        Console.WriteLine($"This item was upgraded from level {Level - 1} to level {Level}");
+    }
+}
