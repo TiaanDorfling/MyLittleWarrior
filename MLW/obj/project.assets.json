@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MLW.csproj",
+      "projectUniqueName": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\MLW.csproj",
       "projectName": "MLW",
-      "projectPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MLW.csproj",
+      "projectPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\MLW.csproj",
       "packagesPath": "C:\\Users\\purnj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\obj\\",
+      "outputPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
