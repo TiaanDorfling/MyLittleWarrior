@@ -83,6 +83,26 @@ public class GameState
         NavigateGameMenu(choice);
     }
 
+    private void DisplayBattleMenu()
+    {
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("Battle Menu:");
+        Console.WriteLine();
+        Console.WriteLine("1. Campaign");
+        Console.WriteLine("2. Dungeons");
+        Console.WriteLine("3. Back");
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.Write("Select an option: ");
+
+        int choice = int.Parse(Console.ReadLine());
+
+        NavigateBattleMenu(choice);
+    }
+
     private void NavigateGameMenu(int choice)
     {
         switch (choice)
@@ -91,8 +111,10 @@ public class GameState
                 DisplayHomeScreen(player);
                 break;
             case 2:
+                DisplayBattleMenu();
                 break;
             case 3:
+                //Shop
                 break;
             case 4:
                 Environment.Exit(0);
@@ -100,6 +122,42 @@ public class GameState
             default:
                 Console.WriteLine("Invalid input.");
                 DisplayGameMenu();
+                break;
+        }
+    }
+
+    private void NavigateBattleMenu(int choice)
+    {
+        switch (choice)
+        {
+            case 1:
+                //Campaign
+                CampaignData cd = new CampaignData();
+                Dictionary<int,CampaignStage> campaignData = cd.initCampaignData();
+
+                // Display the list of available campaign stages
+                Console.Clear();
+                Console.WriteLine("--- Campaign Stages ---");
+                foreach (var stage in campaignData)
+                {
+                    Console.WriteLine($"{stage.Key}. {stage.Value.Name}");
+                }
+                Console.WriteLine("-------------------------");
+                Console.Write("Enter the number of the stage you wish to play: ");
+
+                // Get the user's selection
+                string input = Console.ReadLine();
+                break;
+            case 2:
+                //Dungeons
+                break;
+            case 3:
+                Console.Clear();
+                DisplayGameMenu();
+                break;
+            default:
+                Console.WriteLine("Invalid input.");
+                DisplayBattleMenu();
                 break;
         }
     }

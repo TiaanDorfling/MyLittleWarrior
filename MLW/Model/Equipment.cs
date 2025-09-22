@@ -19,4 +19,12 @@ public class Equipment
         BaseStat += 5;
         Console.WriteLine($"This item was upgraded from level {Level - 1} to level {Level}");
     }
+
+    public Equipment()
+    {
+        Type = "sword";
+        Rarity = "common";
+        Level = 1;
+        BaseStat = 2;
+    }
 }
