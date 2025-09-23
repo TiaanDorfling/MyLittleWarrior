@@ -13,18 +13,8 @@ public class MenuNavigation
 {
     private Character player;
 
-    public MenuNavigation(Character player) { 
-        this.player = player;
-    }
-    private enum State
-    {
-        Home,
-        BattleMenu,
-        CampaignSelection,
-        DungeonSelection,
-        Equipment,
-        Shop,
-        Combat
+    public MenuNavigation() { 
+        player = Player.Instance;
     }
 
     private enum Menu
@@ -35,15 +25,11 @@ public class MenuNavigation
         Exit
     }
 
-    public void DisplayHomeScreen()
+    public int DisplayMainMenu()
     {
         Console.Clear();
         player.DrawCharacter();
-        DisplayGameMenu();
-    }
 
-    public void DisplayGameMenu()
-    {
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine();
@@ -58,11 +44,17 @@ public class MenuNavigation
         Console.WriteLine();
         Console.Write("Select an option: ");
 
-        int choice = int.Parse(Console.ReadLine());
-
-        NavigateGameMenu(choice);
+        while (true)
+        {
+            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 4)
+            {
+                return choice;
+            }
+            Console.WriteLine("Invalid input. Please enter a number from the menu.");
+            Console.Write("Select an option: ");
+        }
     }
-    public void DisplayBattleMenu()
+    public int DisplayBattleMenu()
     {
         Console.WriteLine();
         Console.WriteLine();
@@ -77,71 +69,31 @@ public class MenuNavigation
         Console.WriteLine();
         Console.Write("Select an option: ");
 
-        int choice = int.Parse(Console.ReadLine());
-
-        NavigateBattleMenu(choice);
-    }
-
-    private void NavigateGameMenu(int choice)
-    {
-        switch (choice)
+        while (true)
         {
-            case 1:
-                DisplayHomeScreen();
-                break;
-            case 2:
-                DisplayBattleMenu();
-                break;
-            case 3:
-                //Shop
-                break;
-            case 4:
-                Environment.Exit(0);
-                break;
-            default:
-                Console.WriteLine("Invalid input.");
-                DisplayGameMenu();
-                break;
+            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 3)
+            {
+                return choice;
+            }
+            Console.WriteLine("Invalid input. Please enter a number from the menu.");
+            Console.Write("Select an option: ");
         }
     }
-
-    private void NavigateBattleMenu(int choice)
+    public int DisplayCampaignSelection()
     {
-        switch (choice)
+        CampaignData cd = CampaignData.Instance;
+        Dictionary<int, CampaignStage> campaignData = cd.campaignStageData;
+
+        cd.DisplayStages();
+
+        while (true)
         {
-            case 1:
-                //Campaign
-                CampaignData cd = CampaignData.Instance;
-                Dictionary<int, CampaignStage> campaignData = cd.campaignStageData;
-
-                cd.DisplayStages();
-
-                // Get the user's selection
-                int input = int.Parse(Console.ReadLine());
-
-                if (cd.IsValidStage(input))
-                {
-                    //battle screen
-                    Console.WriteLine("This is the battle screen");
-                }
-                else
-                {
-                    Console.Clear();
-                    Console.WriteLine("Invalid input.");
-                    NavigateBattleMenu(1);
-                }
-                break;
-            case 2:
-                //Dungeons
-                break;
-            case 3:
-                Console.Clear();
-                DisplayGameMenu();
-                break;
-            default:
-                Console.WriteLine("Invalid input.");
-                DisplayBattleMenu();
-                break;
+            if (int.TryParse(Console.ReadLine(), out int choice) && cd.IsValidStage(choice))
+            {
+                return choice;
+            }
+            Console.WriteLine("Invalid input. Please enter a number from the menu.");
+            Console.Write("Select an option: ");
         }
     }
 }

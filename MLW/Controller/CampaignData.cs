@@ -116,18 +116,24 @@ public class CampaignData
 
     public bool IsValidStage(int stageNumber)
     {
-        if (campaignStageData[stageNumber].Completed == true)
+        try
         {
-            return true;
-        }
-        else
-        {
-            if (stageNumber == 1 || campaignStageData[stageNumber - 1].Completed == true)
+            if (campaignStageData[stageNumber].Completed == true)
             {
                 return true;
             }
+            else
+            {
+                if (stageNumber == 1 || campaignStageData[stageNumber - 1].Completed == true)
+                {
+                    return true;
+                }
+            }
         }
-
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
         return false;
     }
 }
