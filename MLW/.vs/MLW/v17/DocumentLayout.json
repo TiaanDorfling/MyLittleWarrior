@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\campaigndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\campaigndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\view\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:view\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\campaigndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\campaigndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\model\\campaignstage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CampaignData.cs",
               "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\CampaignData.cs",
               "RelativeDocumentMoniker": "Controller\\CampaignData.cs",
               "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\CampaignData.cs",
               "RelativeToolTip": "Controller\\CampaignData.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswCsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAnwHwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T19:30:30.349Z",
               "EditorCaption": ""
@@ -86,20 +86,20 @@
               "RelativeDocumentMoniker": "Model\\CampaignStage.cs",
               "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Model\\CampaignStage.cs",
               "RelativeToolTip": "Model\\CampaignStage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T19:25:07.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\View\\GameState.cs",
               "RelativeDocumentMoniker": "View\\GameState.cs",
               "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\View\\GameState.cs",
               "RelativeToolTip": "View\\GameState.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAAwJQAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAawJIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T15:59:22.857Z",
               "EditorCaption": ""

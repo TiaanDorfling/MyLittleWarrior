@@ -12,4 +12,5 @@ public class CampaignStage
     public Character Enemy { get; set; }
     public int GoldReward { get; set; }
     public Equipment EquipmentReward { get; set; }
+    public Boolean Completed { get; set; }
 }

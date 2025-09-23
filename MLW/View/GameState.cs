@@ -132,22 +132,26 @@ public class GameState
         {
             case 1:
                 //Campaign
-                CampaignData cd = new CampaignData();
-                Dictionary<int,CampaignStage> campaignData = cd.initCampaignData();
+                CampaignData cd = CampaignData.Instance;
+                Dictionary<int,CampaignStage> campaignData = cd.campaignStageData;
 
-                // Display the list of available campaign stages
-                Console.Clear();
-                Console.WriteLine("--- Campaign Stages ---");
-                foreach (var stage in campaignData)
-                {
-                    Console.WriteLine($"{stage.Key}. {stage.Value.Name}");
-                }
-                Console.WriteLine("-------------------------");
-                Console.Write("Enter the number of the stage you wish to play: ");
+                cd.DisplayStages();
 
                 // Get the user's selection
-                string input = Console.ReadLine();
-                break;
+                int input = int.Parse(Console.ReadLine());
+
+                if (cd.IsValidStage(input))
+                {
+                    //battle screen
+                    Console.WriteLine("This is the battle screen");
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Invalid input.");
+                    NavigateBattleMenu(1);
+                }
+                    break;
             case 2:
                 //Dungeons
                 break;
