@@ -21,7 +21,8 @@ public class GameState
 
     private MenuNavigation menu;
 
-    // The single instance of the Player class.
+    private int combatStage;
+    // The single instance of the Gamestate class.
     private static GameState _instance;
 
     // A lock object to ensure thread-safe creation.
@@ -93,10 +94,13 @@ public class GameState
                     break;
 
                 case State.CampaignSelection:
-                    int campaignChoice = menu.DisplayCampaignSelection();
+                    combatStage = menu.DisplayCampaignSelection();
+                    CurrentState = State.Combat;
+                break;
 
-                    //combat blah blah blah
-                    break;
+                case State.Combat:
+                    menu.DisplayCombat(combatStage);
+                break;
 
                 case State.Exit:
                     Environment.Exit(0);

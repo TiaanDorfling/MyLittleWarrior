@@ -18,7 +18,7 @@ public class CampaignData
     {
         campaignStageData = initCampaignData();
     }
-    private Dictionary<int, CampaignStage> initCampaignData()
+    public Dictionary<int, CampaignStage> initCampaignData()
     {
         ICharacterFactory enemyFactory = new GoblinFactory();
 
