@@ -19,7 +19,8 @@ public class DisplayCombat
     
     public void Draw(int stage)
     {
-        Console.Clear();
+        ClearFullConsole();
+
         Console.WriteLine($"------{cd.campaignStageData[stage].Name}------\n\n");
 
         DrawCharactersSideBySide(player, Enemy);
@@ -103,9 +104,10 @@ public class DisplayCombat
 
     public void DisplayBattleEnd(bool Victory)
     {
+        ClearFullConsole();
+
         if (Victory)
         {
-            Console.Clear();
             Console.WriteLine($"The battle ended in victory");
             Console.WriteLine($"You have earned {cd.campaignStageData[Stage].GoldReward} gold");
             cd.campaignStageData[Stage].Completed = true;
@@ -114,11 +116,23 @@ public class DisplayCombat
         }
         else
         {
-            Console.Clear();
             Console.WriteLine("The battle ended in defeat");
             player.RestoreHealth();
             //stop loop for now, but later go back to home
             Console.Read();
         }
+    }
+
+    void ClearFullConsole()
+    {
+        // Clear the visible screen and move the cursor to the top-left corner.
+        Console.Clear();
+
+        // Send the ANSI escape code to clear the scrollback buffer.
+        // \x1b is the escape character, [3J is the command to erase the scrollback.
+        Console.Write("\x1b[3J");
+
+        // Optional: Reset the cursor position just to be safe.
+        Console.SetCursorPosition(0, 0);
     }
 }

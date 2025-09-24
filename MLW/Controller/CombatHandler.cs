@@ -39,6 +39,8 @@ internal class CombatHandler
     private void BattleStart()
     {
         Console.Clear();
+        //to not have garbage text output
+        Thread.Sleep(10);
         displayCombat.Draw(Stage);
         enemy = displayCombat.Enemy;
     }
