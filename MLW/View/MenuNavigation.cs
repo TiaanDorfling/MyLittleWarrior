@@ -30,19 +30,12 @@ public class MenuNavigation
         Console.Clear();
         player.DrawCharacter();
 
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine("Game Menu:");
-        Console.WriteLine();
+        Console.WriteLine("\n\n\n\nGame Menu:\n");
         foreach (var item in Enum.GetValues(typeof(Menu)))
         {
             Console.Write($" | {(int)item + 1}. {item} |");
         }
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.Write("Select an option: ");
+        Console.Write("\n\nSelect an option: ");
 
         while (true)
         {
@@ -56,17 +49,11 @@ public class MenuNavigation
     }
     public int DisplayBattleMenu()
     {
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine("Battle Menu:");
-        Console.WriteLine();
+        Console.Clear();
+        Console.WriteLine("Battle Menu:\n");
         Console.WriteLine("1. Campaign");
         Console.WriteLine("2. Dungeons");
-        Console.WriteLine("3. Back");
-        Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine("3. Back\n\n");
         Console.Write("Select an option: ");
 
         while (true)
