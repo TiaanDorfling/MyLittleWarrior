@@ -4,7 +4,7 @@ namespace MLW.Controller;
 
 internal class CombatHandler
 {
-    DisplayCombat displayCombat = new DisplayCombat();
+    DisplayCombat displayCombat;
     int Stage {  get; set; }
     Character player = Player.Instance;
     Character enemy;
@@ -13,6 +13,7 @@ internal class CombatHandler
     public CombatHandler(int stage)
     {
         Stage = stage;
+        displayCombat = new DisplayCombat(stage);
     }
 
     public void BattleLoop()
@@ -39,21 +40,17 @@ internal class CombatHandler
     {
         Console.Clear();
         displayCombat.Draw(Stage);
-        enemy = displayCombat.enemy;
+        enemy = displayCombat.Enemy;
     }
 
     private void PlayerTurn()
     {
-        displayCombat.Draw(Stage);
-        Console.WriteLine("\n\nThe player is preparing to attack...");
-        Thread.Sleep(3000);
+        displayCombat.DisplayTurn(player, enemy);
     }
 
     private void EnemyTurn()
     {
-        displayCombat.Draw(Stage);
-        Console.WriteLine("\n\nThe enemy is preparing to attack...");
-        Thread.Sleep(3000);
+        displayCombat.DisplayTurn(enemy, player);
     }
 
     private bool BattleState()
@@ -74,9 +71,6 @@ internal class CombatHandler
 
     private void BattleEnd()
     {
-        if (Victory)
-        Console.WriteLine($"The battle ended in victory");
-        else
-        Console.WriteLine("The battle ended in defeat");
+        displayCombat.DisplayBattleEnd(Victory);
     }
 }

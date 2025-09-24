@@ -82,4 +82,15 @@ public class Player : Character
         Console.WriteLine($"Atk: {Atk}");
         Console.WriteLine($"Level: {Level}");
     }
+
+    public override void Attack(Character target)
+    {
+        target.Hp -= Atk;
+    }
+
+    public override void RestoreHealth()
+    {
+        //resotre hp after combat
+        Hp = 10;
+    }
 }

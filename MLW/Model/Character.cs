@@ -15,4 +15,8 @@ public abstract class Character
     public string Design { get; set; }
 
     public abstract void DrawCharacter();
+
+    public abstract void Attack(Character target);
+
+    public abstract void RestoreHealth();
 }

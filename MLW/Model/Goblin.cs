@@ -49,5 +49,16 @@ namespace MLW.Model
 ##########################################
 ";
         }
+
+        public override void Attack(Character target)
+        {
+            target.Hp -= Atk;
+        }
+
+        public override void RestoreHealth()
+        {
+            //resotre hp after combat
+            Hp = 10;
+        }
     }
 }

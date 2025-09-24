@@ -1,5 +1,6 @@
 ﻿using MLW.Controller;
 using MLW.Model;
+using System;
 
 namespace MLW.View;
 
@@ -7,18 +8,21 @@ public class DisplayCombat
 {
     Character player = Player.Instance;
     CampaignData cd = CampaignData.Instance;
-    public Character enemy;
-    public DisplayCombat() { }
+    public Character Enemy;
+    public int Stage;
+    public DisplayCombat(int stage) 
+    {
+        Stage = stage;
+        if (Enemy == null)
+            Enemy = cd.campaignStageData[stage].Enemy;
+    }
     
     public void Draw(int stage)
     {
-        if (enemy == null) 
-        enemy = cd.campaignStageData[stage].Enemy;
-
         Console.Clear();
         Console.WriteLine($"------{cd.campaignStageData[stage].Name}------\n\n");
 
-        DrawCharactersSideBySide(player, enemy);
+        DrawCharactersSideBySide(player, Enemy);
 
     }
 
@@ -85,5 +89,36 @@ public class DisplayCombat
         $"Atk: {character.Atk}",
         $"Level: {character.Level}"
         };
+    }
+
+    public void DisplayTurn(Character self, Character target)
+    {
+        Draw(Stage);
+        Console.WriteLine("\n\nThe player is preparing to attack...");
+        Thread.Sleep(2000);
+        self.Attack(target);
+        Console.WriteLine($"Bang! Player deals {self.Atk} damage.");
+        Thread.Sleep(1000);
+    }
+
+    public void DisplayBattleEnd(bool Victory)
+    {
+        if (Victory)
+        {
+            Console.Clear();
+            Console.WriteLine($"The battle ended in victory");
+            Console.WriteLine($"You have earned {cd.campaignStageData[Stage].GoldReward} gold");
+            cd.campaignStageData[Stage].Completed = true;
+            player.RestoreHealth();
+            Console.Read();
+        }
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("The battle ended in defeat");
+            player.RestoreHealth();
+            //stop loop for now, but later go back to home
+            Console.Read();
+        }
     }
 }
