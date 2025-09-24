@@ -1,10 +1,5 @@
 ﻿using MLW.Controller;
 using MLW.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MLW.View;
 
@@ -12,25 +7,19 @@ public class DisplayCombat
 {
     Character player = Player.Instance;
     CampaignData cd = CampaignData.Instance;
-
+    public Character enemy;
     public DisplayCombat() { }
     
     public void Draw(int stage)
     {
-        Character enemy = cd.campaignStageData[stage].Enemy;
-        while (true)
-        {
-            Console.Clear();
-            Console.WriteLine($"------{cd.campaignStageData[stage].Name}------\n\n");
+        if (enemy == null) 
+        enemy = cd.campaignStageData[stage].Enemy;
 
-            DrawCharactersSideBySide(player, enemy);
+        Console.Clear();
+        Console.WriteLine($"------{cd.campaignStageData[stage].Name}------\n\n");
 
-            Console.WriteLine("\n\nThe enemy is preparing to attack...");
-            Thread.Sleep(3000);
+        DrawCharactersSideBySide(player, enemy);
 
-            if (player.Hp <= 0 || enemy.Hp <= 0)
-                return;
-        }
     }
 
     private void DrawCharactersSideBySide(Character player, Character enemy)
