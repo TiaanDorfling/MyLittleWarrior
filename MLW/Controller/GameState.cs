@@ -21,6 +21,8 @@ public class GameState
 
     private MenuNavigation menu;
 
+    DisplayCombat DisplayCombat = new DisplayCombat();
+
     private int combatStage;
     // The single instance of the Gamestate class.
     private static GameState _instance;
@@ -99,7 +101,7 @@ public class GameState
                 break;
 
                 case State.Combat:
-                    menu.DisplayCombat(combatStage);
+                    DisplayCombat.Draw(combatStage);
                 break;
 
                 case State.Exit:
