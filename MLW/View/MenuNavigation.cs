@@ -1,5 +1,6 @@
 ﻿using MLW.Controller;
 using MLW.Model;
+using MLW.Model.Characters;
 
 
 namespace MLW.View;
@@ -35,7 +36,7 @@ public class MenuNavigation
 
         while (true)
         {
-            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 4)
+            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= 5)
             {
                 return choice;
             }

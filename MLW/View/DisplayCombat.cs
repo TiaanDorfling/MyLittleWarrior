@@ -1,5 +1,5 @@
 ﻿using MLW.Controller;
-using MLW.Model;
+using MLW.Model.Characters;
 using System;
 
 namespace MLW.View;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MLW.Model
+﻿namespace MLW.Model.Characters
 {
     internal class Goblin : Character
     {
@@ -22,8 +16,8 @@ namespace MLW.Model
         public Goblin(int level)
         {
             Name = "Goblin";
-            Hp = level*2 + 3;
-            Atk = level*2 - 1;
+            Hp = level*2 + 7;
+            Atk = level*2;
             Level = level;
             Design = @"
 ##########################################

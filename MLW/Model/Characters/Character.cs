@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MLW.Model;
+namespace MLW.Model.Characters;
 
 public abstract class Character
 {

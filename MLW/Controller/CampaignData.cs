@@ -1,4 +1,6 @@
-﻿using MLW.Model;
+﻿using MLW.Controller.Factory;
+using MLW.Model;
+using MLW.Model.Characters;
 using MLW.View;
 
 
@@ -21,12 +23,12 @@ public class CampaignData
     }
     public Dictionary<int, CampaignStage> initCampaignData()
     {
-        ICharacterFactory enemyFactory = new GoblinFactory();
+        EnemyFactory enemyFactory = new EnemyFactory();
 
         campaignStageData.Add(1, new CampaignStage
         {
             Name = "The beginning of time",
-            Enemy = enemyFactory.CreateCharacter(),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
             GoldReward = 50,
             EquipmentReward = new Equipment(),
             Completed = false,
@@ -34,7 +36,7 @@ public class CampaignData
         campaignStageData.Add(2, new CampaignStage
         {
             Name = "The break of dawn",
-            Enemy = enemyFactory.CreateCharacter(),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Orc),
             GoldReward = 50,
             EquipmentReward = new Equipment("chest","common",1,5),
             Completed = false,
@@ -42,7 +44,7 @@ public class CampaignData
         campaignStageData.Add(3, new CampaignStage
         {
             Name = "The icy cold night",
-            Enemy = enemyFactory.CreateCharacter(),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
             GoldReward = 50,
             EquipmentReward = new Equipment("gloves", "common", 1, 5),
             Completed = false,
@@ -50,7 +52,7 @@ public class CampaignData
         campaignStageData.Add(4, new CampaignStage
         {
             Name = "The soothing sunset",
-            Enemy = enemyFactory.CreateCharacter(),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
             GoldReward = 50,
             EquipmentReward = new Equipment("boots", "common", 1, 5),
             Completed = false,
@@ -58,7 +60,7 @@ public class CampaignData
         campaignStageData.Add(5, new CampaignStage
         {
             Name = "The dark night",
-            Enemy = enemyFactory.CreateCharacter(),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
             GoldReward = 50,
             EquipmentReward = new Equipment("helmet", "common", 1, 5),
             Completed = false,

@@ -1,11 +1,11 @@
-﻿using MLW.Model;
+﻿using MLW.Model.Characters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MLW.Controller;
+namespace MLW.Controller.Factory;
 
 internal interface ICharacterFactory
 {

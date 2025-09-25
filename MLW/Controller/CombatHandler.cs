@@ -1,4 +1,4 @@
-﻿using MLW.Model;
+﻿using MLW.Model.Characters;
 using MLW.View;
 namespace MLW.Controller;
 

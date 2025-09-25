@@ -1,4 +1,5 @@
-﻿using MLW.Model;
+﻿using MLW.Controller.Factory;
+using MLW.Model.Characters;
 using MLW.View;
 namespace MLW.Controller;
 
@@ -67,6 +68,9 @@ public class GameState
 
                     switch (homeChoice) 
                     {
+                        case 1:
+                            CurrentState = State.Home;
+                            break;
                         case 2:
                             CurrentState = State.Equipment;
                             break;
