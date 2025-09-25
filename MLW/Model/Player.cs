@@ -93,4 +93,19 @@ public class Player : Character
         //resotre hp after combat
         Hp = 10;
     }
+
+    public override List<Equipment> getInventory()
+    {
+        return inventory;
+    }
+
+    public override void addToInventory(Equipment item)
+    {
+        inventory.Add(item);
+    }
+
+    public override void removeFromInventory(Equipment item)
+    {
+        inventory.Remove(item);
+    }
 }

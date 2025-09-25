@@ -27,4 +27,9 @@ public class Equipment
         Level = 1;
         BaseStat = 2;
     }
+
+    public override string ToString()
+    {
+        return $"{Type} Level: {Level} Rarity: {Rarity}";
+    }
 }

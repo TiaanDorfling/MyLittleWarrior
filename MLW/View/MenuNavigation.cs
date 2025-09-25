@@ -15,6 +15,7 @@ public class MenuNavigation
     private enum Menu
     {
         Home,
+        Equipment,
         Battle,
         Shop,
         Exit

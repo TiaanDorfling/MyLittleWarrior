@@ -21,6 +21,8 @@ public class GameState
 
     private MenuNavigation menu;
 
+    private DisplayEquipment displayEquipment;
+
     private int combatStage;
     // The single instance of the Gamestate class.
     private static GameState _instance;
@@ -34,6 +36,7 @@ public class GameState
         player = playerFactory.CreateCharacter();
 
         menu = new MenuNavigation();
+        displayEquipment = new DisplayEquipment();
     }
 
     // Public static method to get the single instance.
@@ -65,17 +68,24 @@ public class GameState
                     switch (homeChoice) 
                     {
                         case 2:
-                            CurrentState = State.BattleMenu;
+                            CurrentState = State.Equipment;
                             break;
                         case 3:
-                            CurrentState = State.Shop;
+                            CurrentState = State.BattleMenu;
                             break;
                         case 4:
+                            CurrentState = State.Shop;
+                            break;
+                        case 5:
                             CurrentState = State.Exit;
                             break;
                     }
                 break;
-                    
+
+                case State.Equipment:
+                    displayEquipment.Draw();
+                    break;
+
                 case State.BattleMenu:
                     int battleChoice = menu.DisplayBattleMenu();
 
