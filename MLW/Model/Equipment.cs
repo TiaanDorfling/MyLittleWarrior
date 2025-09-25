@@ -28,6 +28,14 @@ public class Equipment
         BaseStat = 2;
     }
 
+    public Equipment(string type, string rarity, int level, int baseStat)
+    {
+        Type = type;
+        Rarity = rarity;
+        Level = level;
+        BaseStat = baseStat;
+    }
+
     public override string ToString()
     {
         return $"{Type} Level: {Level} Rarity: {Rarity}";

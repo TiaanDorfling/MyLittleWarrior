@@ -13,13 +13,7 @@ internal class DisplayEquipment
 
     public void Draw()
     {
-        //to test inventory
-        if (player.inventory.Count == 0)
-        {
-            TestAddEquipment();
-        }
-
-        ClearFullConsole();
+        FullClear.ClearFullConsole();
 
         for (int i = 0; i < player.inventory.Count; i++)
         {
@@ -36,41 +30,5 @@ internal class DisplayEquipment
         int option = int.Parse(Console.ReadLine());
 
         Console.WriteLine(player.inventory[option-1].ToString());
-    }
-
-    public void TestAddEquipment()
-    {
-        // Create the first unique object
-        Equipment chest = new Equipment();
-        chest.Type = "Chest";
-        player.addToInventory(chest);
-
-        // Create a second unique object
-        Equipment gloves = new Equipment();
-        gloves.Type = "Gloves";
-        player.addToInventory(gloves);
-
-        // Create a third unique object
-        Equipment boots = new Equipment();
-        boots.Type = "Boots";
-        player.addToInventory(boots);
-
-        // Create a fourth unique object
-        Equipment helmet = new Equipment();
-        helmet.Type = "Helmet";
-        player.addToInventory(helmet);
-    }
-
-    void ClearFullConsole()
-    {
-        // Clear the visible screen and move the cursor to the top-left corner.
-        Console.Clear();
-
-        // Send the ANSI escape code to clear the scrollback buffer.
-        // \x1b is the escape character, [3J is the command to erase the scrollback.
-        Console.Write("\x1b[3J");
-
-        // Optional: Reset the cursor position just to be safe.
-        Console.SetCursorPosition(0, 0);
     }
 }

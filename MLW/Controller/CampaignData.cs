@@ -1,4 +1,5 @@
 ﻿using MLW.Model;
+using MLW.View;
 
 
 namespace MLW.Controller;
@@ -35,7 +36,7 @@ public class CampaignData
             Name = "The break of dawn",
             Enemy = enemyFactory.CreateCharacter(),
             GoldReward = 50,
-            EquipmentReward = new Equipment(),
+            EquipmentReward = new Equipment("chest","common",1,5),
             Completed = false,
         });
         campaignStageData.Add(3, new CampaignStage
@@ -43,7 +44,7 @@ public class CampaignData
             Name = "The icy cold night",
             Enemy = enemyFactory.CreateCharacter(),
             GoldReward = 50,
-            EquipmentReward = new Equipment(),
+            EquipmentReward = new Equipment("gloves", "common", 1, 5),
             Completed = false,
         });
         campaignStageData.Add(4, new CampaignStage
@@ -51,7 +52,7 @@ public class CampaignData
             Name = "The soothing sunset",
             Enemy = enemyFactory.CreateCharacter(),
             GoldReward = 50,
-            EquipmentReward = new Equipment(),
+            EquipmentReward = new Equipment("boots", "common", 1, 5),
             Completed = false,
         });
         campaignStageData.Add(5, new CampaignStage
@@ -59,7 +60,7 @@ public class CampaignData
             Name = "The dark night",
             Enemy = enemyFactory.CreateCharacter(),
             GoldReward = 50,
-            EquipmentReward = new Equipment(),
+            EquipmentReward = new Equipment("helmet", "common", 1, 5),
             Completed = false,
         });
 
@@ -91,7 +92,7 @@ public class CampaignData
         if (firstUncompletedStageKey == 0)
         {
             // Display the list of available campaign stages
-            Console.Clear();
+            FullClear.ClearFullConsole();
             Console.WriteLine("--- Campaign Stages ---");
             foreach (var stage in campaignStageData)
             {
@@ -103,7 +104,7 @@ public class CampaignData
         else
         {
             // Display the list of available campaign stages
-            Console.Clear();
+            FullClear.ClearFullConsole();
             Console.WriteLine("--- Campaign Stages ---");
             for (int i = 1; i <= firstUncompletedStageKey; i++)
             {

@@ -111,6 +111,7 @@ public class GameState
                 case State.Combat:
                     CombatHandler combat = new CombatHandler(combatStage);
                     combat.BattleLoop();
+                    CurrentState = State.Home;
                 break;
 
                 case State.Exit:

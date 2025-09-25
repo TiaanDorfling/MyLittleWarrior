@@ -19,7 +19,7 @@ public class DisplayCombat
     
     public void Draw(int stage)
     {
-        ClearFullConsole();
+        FullClear.ClearFullConsole();
 
         Console.WriteLine($"------{cd.campaignStageData[stage].Name}------\n\n");
 
@@ -104,35 +104,24 @@ public class DisplayCombat
 
     public void DisplayBattleEnd(bool Victory)
     {
-        ClearFullConsole();
+        FullClear.ClearFullConsole();
 
         if (Victory)
         {
             Console.WriteLine($"The battle ended in victory");
-            Console.WriteLine($"You have earned {cd.campaignStageData[Stage].GoldReward} gold");
+            Console.WriteLine($"You have earned {cd.campaignStageData[Stage].GoldReward} gold.");
+            Console.WriteLine($"You have earned {cd.campaignStageData[Stage].EquipmentReward.ToString}. ");
             cd.campaignStageData[Stage].Completed = true;
             player.RestoreHealth();
+            Console.WriteLine("\n\nPress any key to continue\n\n");
             Console.Read();
         }
         else
         {
             Console.WriteLine("The battle ended in defeat");
             player.RestoreHealth();
-            //stop loop for now, but later go back to home
+            Console.WriteLine("\n\nPress any key to continue\n\n");
             Console.Read();
         }
-    }
-
-    void ClearFullConsole()
-    {
-        // Clear the visible screen and move the cursor to the top-left corner.
-        Console.Clear();
-
-        // Send the ANSI escape code to clear the scrollback buffer.
-        // \x1b is the escape character, [3J is the command to erase the scrollback.
-        Console.Write("\x1b[3J");
-
-        // Optional: Reset the cursor position just to be safe.
-        Console.SetCursorPosition(0, 0);
     }
 }

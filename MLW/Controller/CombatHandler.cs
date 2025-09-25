@@ -6,14 +6,17 @@ internal class CombatHandler
 {
     DisplayCombat displayCombat;
     int Stage {  get; set; }
-    Character player = Player.Instance;
+    Character player;
     Character enemy;
+    CampaignData cd;
     bool Victory { get; set; }
 
     public CombatHandler(int stage)
     {
         Stage = stage;
         displayCombat = new DisplayCombat(stage);
+        player = Player.Instance;
+        cd = CampaignData.Instance;
     }
 
     public void BattleLoop()
@@ -39,10 +42,9 @@ internal class CombatHandler
     private void BattleStart()
     {
         Console.Clear();
-        //to not have garbage text output
-        Thread.Sleep(10);
         displayCombat.Draw(Stage);
         enemy = displayCombat.Enemy;
+
     }
 
     private void PlayerTurn()
@@ -74,5 +76,6 @@ internal class CombatHandler
     private void BattleEnd()
     {
         displayCombat.DisplayBattleEnd(Victory);
+        player.addToInventory(cd.campaignStageData[Stage].EquipmentReward);
     }
 }
