@@ -12,8 +12,21 @@ internal class CharacterType
     {
         Goblin,
         Orc,
-        Dragon,
-        // Add other enemy types here
+        Marauder,
+        Raider,
+        Inquisitor,
+        Assassin,
+        Witch,
+        Basilisk,
+        Huskbeast,
+        Vulture,
+        Golem,
+        Myconid,
+        Fiend,
+        Wraith,
+        Ifrit,
+        Revenant,
+        Horror,
     }
 
     public CharacterType()
