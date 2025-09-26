@@ -10,6 +10,7 @@ public class DisplayCombat
     CampaignData cd = CampaignData.Instance;
     public Character Enemy;
     public int Stage;
+    private bool isPlayerTurn = true;
     public DisplayCombat(int stage) 
     {
         Stage = stage;
@@ -29,9 +30,22 @@ public class DisplayCombat
 
     private void DrawCharactersSideBySide(Character player, Character enemy)
     {
-        // Split the ASCII art strings into arrays of lines.
-        string[] playerLines = player.Design.Split('\n');
-        string[] enemyLines = enemy.Design.Split('\n');
+        string[] playerLines = {"", ""};
+        string[] enemyLines = { "", "" };
+        if (!isPlayerTurn)
+        {
+            // Split the ASCII art strings into arrays of lines.
+            playerLines = player.AtkDesign.Split('\n');
+            enemyLines = enemy.Design.Split('\n');
+            isPlayerTurn = true;
+        }
+        else if (isPlayerTurn)
+        {
+            // Split the ASCII art strings into arrays of lines.
+            playerLines = player.Design.Split('\n');
+            enemyLines = enemy.AtkDesign.Split('\n');
+            isPlayerTurn = false;
+        }
 
         // Get the stat lines for both characters.
         string[] playerStats = DrawCharacterStats(player);
@@ -95,11 +109,22 @@ public class DisplayCombat
     public void DisplayTurn(Character self, Character target)
     {
         Draw(Stage);
-        Console.WriteLine("\n\nThe player is preparing to attack...");
-        Thread.Sleep(2000);
-        self.Attack(target);
-        Console.WriteLine($"Bang! Player deals {self.Atk} damage.");
-        Thread.Sleep(1000);
+        if (isPlayerTurn)
+        {
+            Console.WriteLine("\n\nThe player is preparing to attack...");
+            Thread.Sleep(2000);
+            self.Attack(target);
+            Console.WriteLine($"Bang! Player deals {self.Atk} damage.");
+            Thread.Sleep(1000);
+        }
+        else
+        {
+            Console.WriteLine("\n\nThe enemy is preparing to attack...");
+            Thread.Sleep(2000);
+            self.Attack(target);
+            Console.WriteLine($"Bang! Enemy deals {self.Atk} damage.");
+            Thread.Sleep(1000);
+        }
     }
 
     public void DisplayBattleEnd(bool Victory)

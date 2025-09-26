@@ -36,7 +36,7 @@ public class CampaignData
         campaignStageData.Add(2, new CampaignStage
         {
             Name = "The break of dawn",
-            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Orc),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Horror),
             GoldReward = 50,
             EquipmentReward = new Equipment("chest","common",1,5),
             Completed = false,
@@ -44,7 +44,7 @@ public class CampaignData
         campaignStageData.Add(3, new CampaignStage
         {
             Name = "The icy cold night",
-            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Assassin),
             GoldReward = 50,
             EquipmentReward = new Equipment("gloves", "common", 1, 5),
             Completed = false,
@@ -52,7 +52,7 @@ public class CampaignData
         campaignStageData.Add(4, new CampaignStage
         {
             Name = "The soothing sunset",
-            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Basilisk),
             GoldReward = 50,
             EquipmentReward = new Equipment("boots", "common", 1, 5),
             Completed = false,
@@ -60,7 +60,7 @@ public class CampaignData
         campaignStageData.Add(5, new CampaignStage
         {
             Name = "The dark night",
-            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
+            Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Golem),
             GoldReward = 50,
             EquipmentReward = new Equipment("helmet", "common", 1, 5),
             Completed = false,
