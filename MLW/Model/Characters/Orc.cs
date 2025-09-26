@@ -1,4 +1,6 @@
-﻿namespace MLW.Model.Characters
+﻿using MLW.Controller.Sound;
+
+namespace MLW.Model.Characters
 {
     internal class Orc : Character
     {
@@ -68,6 +70,10 @@
         public override void removeFromInventory(Equipment item)
         {
             inventory.Remove(item);
+        }
+        public override void AtkSoundEffect()
+        {
+            SoundManager.PlayRandomAttackSound();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MLW.Controller.Sound;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
@@ -76,6 +77,11 @@ namespace MLW.Model.Characters
         public override void removeFromInventory(Equipment item)
         {
             inventory.Remove(item);
+        }
+
+        public override void AtkSoundEffect()
+        {
+            SoundManager.PlayRandomAttackSound();
         }
     }
 }

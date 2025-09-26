@@ -14,6 +14,7 @@ public abstract class Character
     public int Level { get; set; }
     public string Design { get; set; }
     public string AtkDesign { get; set; }
+    public abstract void AtkSoundEffect();
     public List<Equipment> inventory { get; set; } = new List<Equipment>();
     public abstract void DrawCharacter();
 

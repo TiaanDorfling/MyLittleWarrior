@@ -115,6 +115,7 @@ public class DisplayCombat
             Thread.Sleep(2000);
             self.Attack(target);
             Console.WriteLine($"Bang! Player deals {self.Atk} damage.");
+            self.AtkSoundEffect();
             Thread.Sleep(1000);
         }
         else
@@ -123,6 +124,7 @@ public class DisplayCombat
             Thread.Sleep(2000);
             self.Attack(target);
             Console.WriteLine($"Bang! Enemy deals {self.Atk} damage.");
+            self.AtkSoundEffect();
             Thread.Sleep(1000);
         }
     }

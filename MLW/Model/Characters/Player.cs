@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MLW.Controller.Sound;
 
 namespace MLW.Model.Characters;
 
@@ -130,5 +126,10 @@ public class Player : Character
     public override void removeFromInventory(Equipment item)
     {
         inventory.Remove(item);
+    }
+
+    public override void AtkSoundEffect()
+    {
+        SoundManager.PlayRandomAttackSoundForPlayer();
     }
 }
