@@ -25,6 +25,7 @@
       <li>Define the data for the first Campaign stage, including the Goblin enemy.\</li>
       <li>Implement the core turn-based combat system.\</li>
       <li>Implement the fixed rewards system to give gold after a fight.</li>
+      <li>Implement more feedback from combat UI.</li>
   </details>
 
 </ul>
@@ -36,7 +37,6 @@
 <ul>
 <li>Implement a basic Equipment screen to show the player's gear and stats.</li>
 <li>Implement the equipment upgrade logic.</li>
-<li>Implement more feedback from combat UI.</li>
 <li>Implement Dungeon logic and unlock stages</li>
 </ul>
 </td>
