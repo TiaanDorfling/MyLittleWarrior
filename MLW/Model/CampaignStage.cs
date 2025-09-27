@@ -1,4 +1,5 @@
 ﻿using MLW.Model.Characters;
+using MLW.Model.EquipmentModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

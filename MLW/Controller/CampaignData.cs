@@ -1,6 +1,7 @@
 ﻿using MLW.Controller.Factory;
 using MLW.Model;
 using MLW.Model.Characters;
+using MLW.Model.EquipmentModel;
 using MLW.View;
 
 
@@ -30,7 +31,7 @@ public class CampaignData
             Name = "The beginning of time",
             Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Goblin),
             GoldReward = 50,
-            EquipmentReward = new Equipment(),
+            EquipmentReward = new EquipmentFactory().CreateEquipment(EquipmentType.Type.weapon),
             Completed = false,
         });
         campaignStageData.Add(2, new CampaignStage
@@ -38,7 +39,7 @@ public class CampaignData
             Name = "The break of dawn",
             Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Horror),
             GoldReward = 50,
-            EquipmentReward = new Equipment("chest","common",1,5),
+            EquipmentReward = new EquipmentFactory().CreateEquipment(EquipmentType.Type.helmet),
             Completed = false,
         });
         campaignStageData.Add(3, new CampaignStage
@@ -46,7 +47,7 @@ public class CampaignData
             Name = "The icy cold night",
             Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Assassin),
             GoldReward = 50,
-            EquipmentReward = new Equipment("gloves", "common", 1, 5),
+            EquipmentReward = new EquipmentFactory().CreateEquipment(EquipmentType.Type.chest),
             Completed = false,
         });
         campaignStageData.Add(4, new CampaignStage
@@ -54,7 +55,7 @@ public class CampaignData
             Name = "The soothing sunset",
             Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Basilisk),
             GoldReward = 50,
-            EquipmentReward = new Equipment("boots", "common", 1, 5),
+            EquipmentReward = new EquipmentFactory().CreateEquipment(EquipmentType.Type.gloves),
             Completed = false,
         });
         campaignStageData.Add(5, new CampaignStage
@@ -62,7 +63,7 @@ public class CampaignData
             Name = "The dark night",
             Enemy = enemyFactory.CreateCharacter(CharacterType.Type.Golem),
             GoldReward = 50,
-            EquipmentReward = new Equipment("helmet", "common", 1, 5),
+            EquipmentReward = new EquipmentFactory().CreateEquipment(EquipmentType.Type.boots),
             Completed = false,
         });
 

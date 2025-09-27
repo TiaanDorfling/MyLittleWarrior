@@ -1,13 +1,16 @@
-﻿using System;
+﻿using MLW.Model.Characters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MLW.Model;
+namespace MLW.Model.EquipmentModel;
 
-public class Equipment
+public abstract class Equipment
 {
+    public int Id { get; set; }
+    public string Name { get; set; }
     public string Type { get; set; }
     public string Rarity { get; set; }
     public int Level { get; set; }
@@ -20,24 +23,10 @@ public class Equipment
         Console.WriteLine($"This item was upgraded from level {Level - 1} to level {Level}");
     }
 
-    public Equipment()
-    {
-        Type = "sword";
-        Rarity = "common";
-        Level = 1;
-        BaseStat = 2;
-    }
-
-    public Equipment(string type, string rarity, int level, int baseStat)
-    {
-        Type = type;
-        Rarity = rarity;
-        Level = level;
-        BaseStat = baseStat;
-    }
-
     public override string ToString()
     {
         return $"{Type} Level: {Level} Rarity: {Rarity}";
     }
+
+    public abstract void AddStatToCharacter(Character character);
 }

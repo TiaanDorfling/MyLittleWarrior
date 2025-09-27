@@ -76,6 +76,7 @@ internal class CombatHandler
     private void BattleEnd()
     {
         displayCombat.DisplayBattleEnd(Victory);
+        if (Victory)
         player.addToInventory(cd.campaignStageData[Stage].EquipmentReward);
     }
 }

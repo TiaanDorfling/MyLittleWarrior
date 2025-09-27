@@ -1,4 +1,5 @@
 ﻿using MLW.Controller.Sound;
+using MLW.Model.EquipmentModel;
 
 namespace MLW.Model.Characters
 {
