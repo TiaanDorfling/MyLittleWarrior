@@ -24,6 +24,8 @@ internal class DisplayEquipment
         FullClear.ClearFullConsole();
         //init lists
         getItems();
+        //display character with stats
+        player.DrawCharacter();
         //display lists
         DisplayWeapons();
         DisplayHelmets();
@@ -31,8 +33,17 @@ internal class DisplayEquipment
         DisplayGloves();
         DisplayBoots();
 
-        if (player.inventory.Count > 0) 
-        DrawItem(DisplayItem());
+        if (player.inventory.Count > 0)
+        {
+            DrawItem(DisplayItem());
+            Console.WriteLine("Here comes menu to upgrade, equip, unequip items.\nPress any key to return to home");
+            Console.Read();
+        }
+        else
+        {
+            Console.WriteLine("Press any key to return to home");
+            Console.Read();
+        }
     }
     private void getItems()
     {
@@ -143,7 +154,7 @@ internal class DisplayEquipment
 
         while (true)
         {
-            if (int.TryParse(Console.ReadLine(), out int option) && player.inventory != null && option < player.inventory.Count)
+            if (int.TryParse(Console.ReadLine(), out int option) && player.inventory != null && option - 1 < player.inventory.Count)
             {
                 return option;
             }
@@ -154,6 +165,7 @@ internal class DisplayEquipment
 
     private void DrawItem(int item)
     {
-        player.inventory[item].ToString();
+        FullClear.ClearFullConsole();
+        Console.WriteLine(player.inventory[item - 1].ToString()); 
     }
 }

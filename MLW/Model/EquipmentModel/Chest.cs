@@ -17,8 +17,14 @@ internal class Chest : Equipment
         this.Rarity = "Common";
     }
 
-    public override void AddStatToCharacter(Character character)
+    public override void Equip(Character character)
     {
         character.Hp += BaseStat;
+        IsEquipped = true;
+    }
+    public override void UnEquip(Character character)
+    {
+        character.Hp -= BaseStat;
+        IsEquipped = false;
     }
 }
