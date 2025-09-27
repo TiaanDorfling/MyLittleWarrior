@@ -12,7 +12,7 @@ internal class Gloves : Equipment
 {
     public Gloves()
     {
-        this.Type = "weapon";
+        this.type = EquipmentType.Type.gloves;
         this.Level = 1;
         this.BaseStat = Level * 8 - 1;
         this.Rarity = "Common";

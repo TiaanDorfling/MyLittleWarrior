@@ -11,7 +11,7 @@ namespace MLW.Model.EquipmentModel
     {
         public Boots()
         {
-            this.Type = "boots";
+            this.type = EquipmentType.Type.boots;
             this.Level = 1;
             this.BaseStat = Level * 5 + 1;
             this.Rarity = "Common";
