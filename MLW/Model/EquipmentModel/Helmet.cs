@@ -11,7 +11,7 @@ internal class Helmet : Equipment
 {
     public Helmet()
     {
-        this.Type = "helmet";
+        this.type = EquipmentType.Type.helmet;
         this.Level = 1;
         this.BaseStat = Level * 7 - 3;
         this.Rarity = "Common";

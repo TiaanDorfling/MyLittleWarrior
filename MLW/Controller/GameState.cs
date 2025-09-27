@@ -88,6 +88,7 @@ public class GameState
 
                 case State.Equipment:
                     displayEquipment.Draw();
+                     //problem with loop
                     break;
 
                 case State.BattleMenu:

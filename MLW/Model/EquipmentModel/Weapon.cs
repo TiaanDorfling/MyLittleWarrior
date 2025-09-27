@@ -12,7 +12,7 @@ internal class Weapon : Equipment
 {
     public Weapon() 
     {
-        this.Type = "weapon";
+        this.type = EquipmentType.Type.weapon;
         this.Level = 1;
         this.BaseStat = Level * 5 + 1;
         this.Rarity = "Common";

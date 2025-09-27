@@ -11,7 +11,7 @@ public abstract class Equipment
 {
     public int Id { get; set; }
     public string Name { get; set; }
-    public string Type { get; set; }
+    public EquipmentType.Type type { get; set; }
     public string Rarity { get; set; }
     public int Level { get; set; }
     public int BaseStat {  get; set; }
@@ -25,7 +25,7 @@ public abstract class Equipment
 
     public override string ToString()
     {
-        return $"{Type} Level: {Level} Rarity: {Rarity}";
+        return $"{type.ToString()} Level: {Level} Rarity: {Rarity}";
     }
 
     public abstract void AddStatToCharacter(Character character);

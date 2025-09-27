@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MLW.Model.EquipmentModel;
 
-internal class EquipmentType
+public class EquipmentType
 {
     public enum Type
     {

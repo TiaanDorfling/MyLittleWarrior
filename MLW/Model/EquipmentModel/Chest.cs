@@ -11,7 +11,7 @@ internal class Chest : Equipment
 {
     public Chest()
     {
-        this.Type = "chest";
+        this.type = EquipmentType.Type.chest;
         this.Level = 1;
         this.BaseStat = Level * 15;
         this.Rarity = "Common";
