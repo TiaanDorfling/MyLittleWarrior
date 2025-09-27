@@ -31,11 +31,12 @@
 </ul>
 </td>
 <td>
-<ul></ul>
+<ul>
+  <li>Implement a basic Equipment screen to show the player's gear and stats.</li>
+</ul>
 </td>
 <td>
 <ul>
-<li>Implement a basic Equipment screen to show the player's gear and stats.</li>
 <li>Implement the equipment upgrade logic.</li>
 <li>Implement Dungeon logic and unlock stages</li>
 </ul>
