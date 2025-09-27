@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\view\\displaycombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:view\\displaycombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\combathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\combathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\campaigndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\campaigndata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\controller\\factory\\equipmentfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:controller\\factory\\equipmentfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|c:\\users\\purnj\\desktop\\bc\\2025\\apps\\games\\my little warrior\\mlw\\mylittlewarrior\\mlw\\view\\displayequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F23A3B2-FECB-430E-A112-E8AB40B2A72F}|MLW.csproj|solutionrelative:view\\displayequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,53 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DisplayCombat.cs",
-              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\View\\DisplayCombat.cs",
-              "RelativeDocumentMoniker": "View\\DisplayCombat.cs",
-              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\View\\DisplayCombat.cs",
-              "RelativeToolTip": "View\\DisplayCombat.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Title": "DisplayEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\View\\DisplayEquipment.cs",
+              "RelativeDocumentMoniker": "View\\DisplayEquipment.cs",
+              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\View\\DisplayEquipment.cs*",
+              "RelativeToolTip": "View\\DisplayEquipment.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:45:30.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CombatHandler.cs",
-              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\CombatHandler.cs",
-              "RelativeDocumentMoniker": "Controller\\CombatHandler.cs",
-              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\CombatHandler.cs",
-              "RelativeToolTip": "Controller\\CombatHandler.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwE8AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:44:58.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CampaignData.cs",
-              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\CampaignData.cs",
-              "RelativeDocumentMoniker": "Controller\\CampaignData.cs",
-              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\CampaignData.cs",
-              "RelativeToolTip": "Controller\\CampaignData.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAIwEEAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:40:49.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EquipmentFactory.cs",
-              "DocumentMoniker": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\Factory\\EquipmentFactory.cs",
-              "RelativeDocumentMoniker": "Controller\\Factory\\EquipmentFactory.cs",
-              "ToolTip": "C:\\Users\\purnj\\Desktop\\BC\\2025\\apps\\Games\\My Little Warrior\\MLW\\MyLittleWarrior\\MLW\\Controller\\Factory\\EquipmentFactory.cs",
-              "RelativeToolTip": "Controller\\Factory\\EquipmentFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T08:34:30.364Z",
+              "WhenOpened": "2025-09-27T13:54:56.528Z",
               "EditorCaption": ""
             }
           ]
