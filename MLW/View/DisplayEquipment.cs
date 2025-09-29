@@ -36,8 +36,6 @@ internal class DisplayEquipment
         if (player.inventory.Count > 0)
         {
             DrawItem(DisplayItem());
-            Console.WriteLine("Here comes menu to upgrade, equip, unequip items.\nPress any key to return to home");
-            Console.Read();
         }
         else
         {
@@ -166,6 +164,78 @@ internal class DisplayEquipment
     private void DrawItem(int item)
     {
         FullClear.ClearFullConsole();
-        Console.WriteLine(player.inventory[item - 1].ToString()); 
+        Equipment equipment = player.inventory[item - 1];
+        Console.WriteLine(equipment.ToString());
+
+        EquipmentMenu(equipment);
+    }
+
+    private void EquipmentMenu(Equipment equipment)
+    {
+        int choice;
+        if (!equipment.IsEquipped)
+        {
+            Console.WriteLine("Menu\n1. Upgrade\t2. Equip\t3. Home");
+            Console.Write("Enter your option: ");
+            while (true)
+            {
+                if (int.TryParse(Console.ReadLine(), out int option) && option < 4 && option > 0)
+                {
+                    choice = option;
+                    break;
+                }
+                Console.WriteLine("Invalid input. Please enter a number from the menu.");
+                Console.Write("Choose an item to display: ");
+            }
+            if (choice == 1)
+            {
+                Console.WriteLine("Here comes menu to upgrade, equip, unequip items.\nPress any key to return to home");
+                Console.Read();
+            }
+            else if (choice == 2)
+            {
+                equipment.Equip(player);
+                DrawItem(DisplayItem());
+            }
+            else
+            {
+                Console.WriteLine("Press any key to return to home");
+                Console.Read();
+            }
+        }
+        else
+        {
+            Console.WriteLine("Menu\n1. Upgrade\t2. Unequip\t3. Home");
+            Console.Write("Enter your option: ");
+            while (true)
+            {
+                if (int.TryParse(Console.ReadLine(), out int option) && option < 4 && option > 0)
+                {
+                    choice = option;
+                    break;
+                }
+                Console.WriteLine("Invalid input. Please enter a number from the menu.");
+                Console.Write("Choose an item to display: ");
+            }
+            if (choice == 1)
+            {
+                Console.WriteLine("Here comes menu to upgrade, equip, unequip items.\nPress any key to return to home");
+                Console.Read();
+            }
+            else if (choice == 2) 
+            {
+                equipment.UnEquip(player);
+                DrawItem(DisplayItem());
+
+            }
+            else
+            {
+                Console.WriteLine("Press any key to return to home");
+                Console.Read();
+            }
+        }
+
+
+
     }
 }
