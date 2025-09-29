@@ -244,7 +244,18 @@ internal class DisplayEquipment
 
         EquipmentMenu(item);
     }
-
+    private bool CanEquip(int item)
+    {
+        // validate if equip already exist
+        for (int i = 0; i < equiped.Count; i++)
+        {
+            if (player.inventory[item - 1].type == equiped[i].type)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     private void EquipmentMenu(int item)
     {
         int choice;
@@ -269,8 +280,16 @@ internal class DisplayEquipment
             }
             else if (choice == 2)
             {
-                player.inventory[item - 1].Equip(player);
-                DrawItem(DisplayItem());
+                bool b = CanEquip(item);
+                if (b)
+                {
+                    player.inventory[item - 1].Equip(player);
+                    DrawItem(DisplayItem());
+                }
+                else
+                {
+                    Console.WriteLine($"Already have {player.inventory[item - 1].type.ToString()}");
+                }
             }
             else
             {
