@@ -88,6 +88,7 @@ public class GameState
 
                 case State.Equipment:
                     displayEquipment.Draw();
+                    CurrentState = State.Home;
                      //problem with loop
                     break;
 

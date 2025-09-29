@@ -18,8 +18,15 @@ internal class Weapon : Equipment
         this.Rarity = "Common";
     }
 
-    public override void AddStatToCharacter(Character character)
+    public override void Equip(Character character)
     {
         character.Atk += BaseStat;
+        IsEquipped = true;
+    }
+
+    public override void UnEquip(Character character)
+    {
+        character.Atk -= BaseStat;
+        IsEquipped = false;
     }
 }

@@ -15,6 +15,7 @@ public abstract class Equipment
     public string Rarity { get; set; }
     public int Level { get; set; }
     public int BaseStat {  get; set; }
+    public bool IsEquipped { get; set; } = false;
 
     public void Upgrade()
     {
@@ -25,8 +26,9 @@ public abstract class Equipment
 
     public override string ToString()
     {
-        return $"{type.ToString()} Level: {Level} Rarity: {Rarity}";
+        return $"{type} Level: {Level} Rarity: {Rarity}";
     }
 
-    public abstract void AddStatToCharacter(Character character);
+    public abstract void Equip(Character character);
+    public abstract void UnEquip(Character character);
 }
